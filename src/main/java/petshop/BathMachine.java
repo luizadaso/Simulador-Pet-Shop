@@ -23,6 +23,17 @@ public class BathMachine {
         if (water == 30){
             System.out.println("Armazenamento de água cheio.");
         }
+
+        water += 2;
     }
+
+    public void addShampoo(){
+        if (shampoo == 10){
+            System.out.println("Armazenamento de shampoo cheio.");
+        }
+
+        shampoo += 2;
+    }
+
 
 }
