@@ -46,4 +46,15 @@ public class BathMachine {
     public boolean hasPet(){
         return pet != null;
     }
+
+    public void setPet(Pet pet) {
+        if (!this.clean){
+            System.out.println("Limpe a máquina antes de adicionar um pet");
+        }
+
+        if (hasPet()){
+            System.out.println("O pet " + this.pet.getName() + " está na máquina.");
+        }
+
+    }
 }
