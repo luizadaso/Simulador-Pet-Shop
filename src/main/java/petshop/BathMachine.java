@@ -42,4 +42,8 @@ public class BathMachine {
     public int getShampoo() {
         return shampoo;
     }
+
+    public boolean hasPet(){
+        return pet != null;
+    }
 }
