@@ -66,4 +66,11 @@ public class BathMachine {
        this.clean = this.pet.isClean();
        this.pet = null;
     }
+
+    public void washMachine(){
+        this.water -= 10;
+        this.shampoo -= 2;
+        this.clean = true;
+        System.out.println("A máquina está limpa.");
+    }
 }
