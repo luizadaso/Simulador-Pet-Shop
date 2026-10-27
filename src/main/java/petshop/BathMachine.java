@@ -35,5 +35,11 @@ public class BathMachine {
         shampoo += 2;
     }
 
+    public int getWater() {
+        return water;
+    }
 
+    public int getShampoo() {
+        return shampoo;
+    }
 }
