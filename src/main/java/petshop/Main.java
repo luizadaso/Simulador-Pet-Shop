@@ -50,11 +50,13 @@ public class Main {
                 }
 
                 case 4 -> {
-
+                    verifyShampoo();
                 }
 
                 case 5 -> {
+                    int amount = bathMachine.getShampoo();
 
+                    System.out.println("Nível de Shampoo: " + amount " litros");
                 }
 
                 case 6 -> {
@@ -79,6 +81,12 @@ public class Main {
             }
         }
 
+    }
+
+    private static void verifyShampoo() {
+        int amount = bathMachine.getWater();
+
+        System.out.println("Nível de Água: " + amount + " litros");
     }
 
     private static void checkIfHasPet() {
