@@ -11,7 +11,8 @@ public class Main {
     public static void main(String[] args) {
         int option;
 
-        String menu = """                
+        do {
+            System.out.println("""                
                    Escolha a opção desejada:
                 
                    1 - Dar banho no pet
@@ -24,12 +25,9 @@ public class Main {
                    8 - Retirar pet da máquina
                    9 - Limpar máquina
                    0 - Sair
-                   """;
-        option = scanner.nextInt();
+                   """);
 
-        do {
-            System.out.println("Hora do banho!");
-            System.out.println(menu);
+            option = scanner.nextInt();
 
             switch (option) {
                 case 1 -> showerPet();
