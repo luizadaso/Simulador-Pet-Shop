@@ -71,6 +71,6 @@ public class BathMachine {
         this.water -= 10;
         this.shampoo -= 2;
         this.clean = true;
-        System.out.println("A máquina está limpa.");
+        System.out.println("A limpeza da máquina foi concluída.");
     }
 }
