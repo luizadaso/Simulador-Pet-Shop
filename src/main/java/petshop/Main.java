@@ -9,7 +9,7 @@ public class Main {
     private static final BathMachine bathMachine = new BathMachine();
 
     public static void main(String[] args) {
-        int option = -1;
+        int option;
 
         String menu = """                
                    Escolha a opção desejada:
