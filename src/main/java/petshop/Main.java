@@ -41,43 +41,31 @@ public class Main {
 
                 }
 
-                case 2 -> {
-                    bathMachine.addWater();
-                }
+                case 2 -> bathMachine.addWater();
 
-                case 3 -> {
-                    bathMachine.addShampoo();
-                }
+                case 3 -> bathMachine.addShampoo();
 
-                case 4 -> {
-                    verifyWater();
-                }
+                case 4 -> verifyWater();
 
-                case 5 -> {
-                    verifyShampoo();
-                }
+                case 5 -> verifyShampoo();
 
-                case 6 -> {
-                    checkIfHasPet();
-                }
+                case 6 -> checkIfHasPet();
 
-                case 7 -> {
-                    setPetMachine();
-                }
+                case 7 -> setPetMachine();
 
-                case 8 -> {
-                    bathMachine.removePet();
-                }
+                case 8 -> bathMachine.removePet();
 
-                case 9 -> {
-                    bathMachine.washMachine();
-                }
+                case 9 -> bathMachine.washMachine();
 
-                case 0 -> {
+                case 0 -> System.out.println("Encerrando...");
 
-                }
+                default -> System.out.println("Opção inválida");
             }
         }
+
+    }
+
+    private static void setWater(){
 
     }
 
