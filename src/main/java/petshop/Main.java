@@ -31,19 +31,12 @@ public class Main {
             System.out.println("Hora do banho!");
             System.out.println(menu);
 
-        } while (option != 0){
-
             switch (option) {
-                case 1 -> {
-                // verificar se o pet está na maquina, se tem agua e shampoo, se o pet sairá limpo.
-                    bathMachine.setPet();
-                    bathMachine.batheAPet();
+                case 1 -> showerPet();
 
-                }
+                case 2 -> setWater();
 
-                case 2 -> bathMachine.addWater();
-
-                case 3 -> bathMachine.addShampoo();
+                case 3 -> setShampoo();
 
                 case 4 -> verifyWater();
 
@@ -57,16 +50,41 @@ public class Main {
 
                 case 9 -> bathMachine.washMachine();
 
-                case 0 -> System.out.println("Encerrando...");
+                case 0 -> {
+                    System.out.println("Encerrando...");
+                    System.exit(0);
+                }
 
                 default -> System.out.println("Opção inválida");
             }
-        }
+
+        } while (true);
 
     }
 
-    private static void setWater(){
+    private static void showerPet(){
+        int amountWater = bathMachine.getWater();
+        int amountShampoo = bathMachine.getShampoo();
 
+        if (amountWater < 10 && amountShampoo < 2) {
+            System.out.println("Água e shampoo insuficientes.");
+        } else if (amountWater < 10) {
+            System.out.println("Água insuficiente.");
+        } else if (amountShampoo < 2) {
+            System.out.println("Shampoo insuficiente.");
+        }
+
+        bathMachine.batheAPet();
+    }
+
+    private static void setWater(){
+        System.out.println("Água adicionada ao recipiente.");
+        bathMachine.addWater();
+    }
+
+    private static void setShampoo(){
+        System.out.println("Shampoo adicionado ao recipiente.");
+        bathMachine.addShampoo();
     }
 
     private static void verifyWater() {
