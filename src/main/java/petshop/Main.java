@@ -35,15 +35,18 @@ public class Main {
 
             switch (option) {
                 case 1 -> {
+                // verificar se o pet está na maquina, se tem agua e shampoo, se o pet sairá limpo.
+                    bathMachine.setPet();
+                    bathMachine.batheAPet();
 
                 }
 
                 case 2 -> {
-
+                    bathMachine.addWater();
                 }
 
                 case 3 -> {
-
+                    bathMachine.addShampoo();
                 }
 
                 case 4 -> {
@@ -55,7 +58,7 @@ public class Main {
                 }
 
                 case 6 -> {
-
+                    checkIfHasPet();
                 }
 
                 case 7 -> {
@@ -63,11 +66,11 @@ public class Main {
                 }
 
                 case 8 -> {
-
+                    bathMachine.removePet();
                 }
 
                 case 9 -> {
-
+                    bathMachine.washMachine();
                 }
 
                 case 0 -> {
@@ -76,6 +79,11 @@ public class Main {
             }
         }
 
+    }
+
+    private static void checkIfHasPet() {
+        boolean hasPet = bathMachine.hasPet();
+        System.out.println(hasPet ? "O pet está na máquina." : "Não há pet na máquina");
     }
 
     public static void setPetMachine(){
@@ -89,5 +97,6 @@ public class Main {
         bathMachine.setPet(pet);
         System.out.println("O pet " + pet.getName() + " foi colocado na máquina.");
     }
+
 }
 
