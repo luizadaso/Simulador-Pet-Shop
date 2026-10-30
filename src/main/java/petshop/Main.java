@@ -6,6 +6,8 @@ public class Main {
 
     private static final Scanner scanner = new Scanner (System.in);
 
+    private static final BathMachine bathMachine = new BathMachine();
+
     public static void main(String[] args) {
         int option = -1;
 
@@ -31,12 +33,61 @@ public class Main {
 
         } while (option != 0){
 
+            switch (option) {
+                case 1 -> {
+
+                }
+
+                case 2 -> {
+
+                }
+
+                case 3 -> {
+
+                }
+
+                case 4 -> {
+
+                }
+
+                case 5 -> {
+
+                }
+
+                case 6 -> {
+
+                }
+
+                case 7 -> {
+                    setPetMachine();
+                }
+
+                case 8 -> {
+
+                }
+
+                case 9 -> {
+
+                }
+
+                case 0 -> {
+
+                }
+            }
         }
 
     }
 
-    public void setPetMachine(){
-        System.out.println("informe o nome do pet:");
-        String name = scanner.nextLine();
+    public static void setPetMachine(){
+        String name = "";
+        while (name == null || name.isEmpty()){
+            System.out.println("informe o nome do pet:");
+            name = scanner.nextLine();
+        }
+
+        Pet pet = new Pet(name);
+        bathMachine.setPet(pet);
+        System.out.println("O pet " + pet.getName() + " foi colocado na máquina.");
     }
 }
+
