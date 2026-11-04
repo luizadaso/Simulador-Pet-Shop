@@ -104,7 +104,7 @@ public class Main {
 
     public static void setPetMachine(){
         String name = "";
-        while (name == null || name.isEmpty()){
+        while (name.isBlank()){
             System.out.println("informe o nome do pet:");
             name = scanner.next();
         }
