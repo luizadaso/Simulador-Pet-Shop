@@ -112,7 +112,6 @@ public class Main {
 
         Pet pet = new Pet(name);
         bathMachine.setPet(pet);
-        System.out.println("O pet " + pet.getName() + " foi colocado na máquina.");
     }
 
 }
