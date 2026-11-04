@@ -63,9 +63,14 @@ public class BathMachine {
         this.pet = pet;
     }
 
-    public void removePet(){
-       this.clean = this.pet.isClean();
-       this.pet = null;
+    public void removePet() {
+        if (!hasPet()) {
+            System.out.println("Não há pet na máquina.");
+            return;
+        }
+
+        this.clean = this.pet.isClean();
+        this.pet = null;
     }
 
     public void washMachine(){
