@@ -70,6 +70,7 @@ public class BathMachine {
         }
 
         this.pet = pet;
+        System.out.println("Pet adicionado.");
     }
 
     public void removePet() {
