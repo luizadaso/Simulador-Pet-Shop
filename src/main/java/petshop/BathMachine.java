@@ -13,13 +13,14 @@ public class BathMachine {
     public void batheAPet(){
         if (this.pet == null) {
             System.out.println("Coloque o pet na máquina de banho.");
+        }else {
+
+            this.water -= 10;
+            this.shampoo -= 2;
+
+            pet.setClean(true);
+            System.out.println("O pet " + pet.getName() + " está limpo!");
         }
-
-        this.water -= 10;
-        this.shampoo -= 2;
-
-        pet.setClean(true);
-        System.out.println("O pet " + pet.getName() + " está limpo!");
     }
 
     public void addWater(){
