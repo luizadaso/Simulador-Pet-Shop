@@ -106,7 +106,7 @@ public class Main {
         String name = "";
         while (name == null || name.isEmpty()){
             System.out.println("informe o nome do pet:");
-            name = scanner.nextLine();
+            name = scanner.next();
         }
 
         Pet pet = new Pet(name);
