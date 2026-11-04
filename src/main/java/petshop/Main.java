@@ -28,6 +28,7 @@ public class Main {
                    """);
 
             option = scanner.nextInt();
+            scanner.nextLine();
 
             switch (option) {
                 case 1 -> showerPet();
