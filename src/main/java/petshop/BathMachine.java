@@ -64,7 +64,9 @@ public class BathMachine {
     }
 
     public void removePet() {
-        if (!hasPet()) {
+        if (hasPet()) {
+            System.out.println("Pet retirado da máquina.");
+        }else {
             System.out.println("Não há pet na máquina.");
             return;
         }
