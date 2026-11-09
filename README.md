@@ -1,12 +1,12 @@
 # 🐾 Simulador de Tarefas de Pet Shop
 
-## 📋 Descrição
+## Descrição
 
 Este projeto consiste em um simulador de máquina de banho para pet shop desenvolvido em Java. O sistema permite gerenciar o processo de banho dos pets por meio de um menu interativo no terminal, possibilitando o controle de recursos como água e shampoo, além do gerenciamento dos animais na máquina.
 
 O projeto foi criado com fins educacionais para praticar conceitos fundamentais de Programação Orientada a Objetos (POO) utilizando Java.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 O sistema oferece as seguintes funcionalidades:
 
@@ -21,7 +21,7 @@ O sistema oferece as seguintes funcionalidades:
 - Realizar a limpeza da máquina;
 - Encerrar o sistema.
 
-## 📑 Menu da Aplicação
+## Menu da Aplicação
 
 ```text
 Escolha a opção desejada:
@@ -38,7 +38,7 @@ Escolha a opção desejada:
 0 - Sair
 ```
 
-## ⚙️ Regras de Negócio
+## Regras de Negócio
 
 ### Banho do Pet
 
@@ -64,7 +64,7 @@ O sistema permite monitorar constantemente os níveis de:
 - Água;
 - Shampoo.
 
-## 🏗️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```text
 src/
@@ -92,7 +92,7 @@ Classe responsável pelo gerenciamento da máquina de banho, incluindo:
 
 Classe que representa o animal de estimação contendo suas informações básicas, como o nome.
 
-## 💻 Exemplo de Uso
+## Exemplo de Uso
 
 ```text
 Informe o nome do pet:
@@ -104,7 +104,7 @@ Shampoo adicionado ao recipiente.
 Banho realizado com sucesso.
 ```
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Java
 - Scanner (java.util.Scanner)
@@ -123,7 +123,7 @@ javac *.java
 ```bash
 java*Main*```
 
-## 🎯 Objetivo do Projeto
+## Objetivo do Projeto
 Este projeto tem como objetivo demonstrar a aplicação de conceitos básicos e intermediários de Java, incluindo:
 
 - Encapsulamento;
