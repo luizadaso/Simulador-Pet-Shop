@@ -118,22 +118,28 @@ Banho realizado com sucesso.
 javac *.java
 ```
 
-###*Executar a aplicação
+### Executar a aplicação
 
 ```bash
 java*Main*```
 
-## 🎯 Objetivo do Projeto*
-Este projeto tem como objetivo de*onstrar a aplicação de conceitos b*sicos e intermediários de Java,*incluindo:
+## 🎯 Objetivo do Projeto
+Este projeto tem como objetivo demonstrar a aplicação de conceitos básicos e intermediários de Java, incluindo:
 
 - Encapsulamento;
-- Cl*sses e Objetos;
+- Classes e Objetos;
 - Métodos;
-- Estr*turas de Repetição;
--*Estruturas Condicionais;
-- Manip*lação de entrada de dados pelo*terminal.
+- Estruturas de Repetição;
+- Estruturas Condicionais;
+- Manipulação de entrada de dados pelo terminal.
 
-## 📄 Lic*nça
+## Autora
 
-Projeto desenvolvido para*fins educacionais e de aprendizado*
-*
+Para mais informações, sinta-se à vontade para entrar em contato:
+
+<div>
+  <img src="https://github.com/user-attachments/assets/57cac2a3-49b1-4a0a-aef3-e968523971eb" width="15%" alt="autora" />
+</div>
+
+- [Github](https://github.com/luizadaso)
+- [Linkedin](https://www.linkedin.com/in/luizadaso)
