@@ -2,136 +2,91 @@
 
 ## Descrição
 
-Este projeto consiste em um simulador de máquina de banho para pet shop desenvolvido em Java. O sistema permite gerenciar o processo de banho dos pets por meio de um menu interativo no terminal, possibilitando o controle de recursos como água e shampoo, além do gerenciamento dos animais na máquina.
+Este projeto consiste em uma aplicação de console desenvolvida em Java que simula o controle de uma máquina de banho para pets em um pet shop. O sistema foi projetado com foco na aplicação de conceitos fundamentais de Programação Orientada a Objetos (POO), modelando entidades do mundo real, regras de negócio e o gerenciamento de recursos de forma estruturada.
 
-O projeto foi criado com fins educacionais para praticar conceitos fundamentais de Programação Orientada a Objetos (POO) utilizando Java.
+Durante o desenvolvimento, foram aplicados princípios de encapsulamento, responsabilidade única e separação de responsabilidades entre as classes, tornando o código mais organizado, legível e de fácil manutenção.
+
+O projeto demonstra a capacidade de transformar requisitos de negócio em funcionalidades funcionais, implementando validações, controle de estado da aplicação e interação com o usuário através de menus interativos.
+
+---
+
+## Usabilidade
+
+A aplicação é executada diretamente pelo terminal e disponibiliza um menu interativo para navegação.
+
+O fluxo foi desenvolvido para ser intuitivo, permitindo que o usuário:
+
+- Gerencie o abastecimento da máquina;
+- Controle a entrada e saída de pets;
+- Consulte informações sobre o estado atual da máquina;
+- Execute operações respeitando regras de negócio previamente definidas;
+- Receba feedbacks claros sobre ações realizadas ou tentativas inválidas.
+
+Além da interação com o usuário, o sistema valida cenários como falta de recursos necessários para o banho ou tentativa de operar a máquina em estados inadequados.
+
+---
 
 ## Funcionalidades
 
-O sistema oferece as seguintes funcionalidades:
+### Gerenciamento de Pets
 
-- Dar banho em um pet;
-- Abastecer o reservatório de água;
-- Abastecer o reservatório de shampoo;
-- Consultar o nível de água disponível;
-- Consultar o nível de shampoo disponível;
-- Verificar se existe um pet na máquina;
-- Inserir um pet na máquina;
-- Remover um pet da máquina;
-- Realizar a limpeza da máquina;
-- Encerrar o sistema.
-
-## Menu da Aplicação
-
-```text
-Escolha a opção desejada:
-
-1 - Dar banho no pet
-2 - Abastecer com água
-3 - Abastecer com shampoo
-4 - Verificar nivel de água
-5 - Verificar nivel de shampoo
-6 - Verificar se tem pet no banho
-7 - Colocar pet na maquina
-8 - Retirar pet da máquina
-9 - Limpar máquina
-0 - Sair
-```
-
-## Regras de Negócio
-
-### Banho do Pet
-
-Para realizar um banho, a máquina deve possuir:
-
-- Pelo menos 10 litros de água;
-- Pelo menos 2 litros de shampoo;
-- Um pet inserido na máquina.
-
-Caso algum dos recursos esteja insuficiente, o sistema exibirá uma mensagem informando a situação.
-
-### Inserção de Pet
-
-Para inserir um pet na máquina:
-
-- O nome deve ser informado pelo usuário;
-- Não são aceitos nomes vazios ou em branco.
+- Inserção de pets na máquina de banho;
+- Remoção de pets da máquina;
+- Verificação da presença de um pet na máquina.
 
 ### Controle de Recursos
 
-O sistema permite monitorar constantemente os níveis de:
+- Abastecimento de água;
+- Abastecimento de shampoo;
+- Consulta dos níveis disponíveis de água;
+- Consulta dos níveis disponíveis de shampoo.
 
-- Água;
-- Shampoo.
+### Operações da Máquina
 
-## Estrutura do Projeto
+- Execução do banho do pet;
+- Verificação de disponibilidade de recursos antes da operação;
+- Limpeza da máquina após utilização;
+- Controle do estado da máquina durante sua utilização.
 
-```text
-src/
-│
-├── Main.java
-├── BathMachine.java
-└── Pet.java
-```
+### Tratamento de Regras de Negócio
 
-### Main.java
+- Validação dos níveis mínimos de água e shampoo;
+- Validação da presença de um pet antes da execução do banho;
+- Validação de entradas fornecidas pelo usuário;
+- Feedback de erros e operações concluídas com sucesso.
 
-Classe responsável pela interação com o usuário através do terminal, exibindo o menu e executando as ações escolhidas.
-
-### BathMachine.java
-
-Classe responsável pelo gerenciamento da máquina de banho, incluindo:
-
-- Controle dos níveis de água;
-- Controle dos níveis de shampoo;
-- Gerenciamento do pet na máquina;
-- Execução do banho;
-- Limpeza da máquina.
-
-### Pet.java
-
-Classe que representa o animal de estimação contendo suas informações básicas, como o nome.
-
-## Exemplo de Uso
-
-```text
-Informe o nome do pet:
-Thor
-
-Água adicionada ao recipiente.
-Shampoo adicionado ao recipiente.
-
-Banho realizado com sucesso.
-```
+---
 
 ## Tecnologias Utilizadas
 
-- Java
-- Scanner (java.util.Scanner)
+### Linguagem
+
+- Java 21
+
+### Conceitos Aplicados
+
 - Programação Orientada a Objetos (POO)
+- Encapsulamento
+- Abstração
+- Composição entre classes
+- Controle de fluxo
+- Estruturas condicionais
+- Estruturas de repetição
+- Tratamento de estados da aplicação
 
-## ▶️ Como Executar
+### Bibliotecas
 
-### Compilar o projeto
+- `java.util.Scanner` para entrada de dados via terminal
 
-```bash
-javac *.java
-```
+### Ferramentas
 
-### Executar a aplicação
+- JDK
+- Git
+- GitHub
 
-```bash
-java*Main*```
+---
 
-## Objetivo do Projeto
-Este projeto tem como objetivo demonstrar a aplicação de conceitos básicos e intermediários de Java, incluindo:
-
-- Encapsulamento;
-- Classes e Objetos;
-- Métodos;
-- Estruturas de Repetição;
-- Estruturas Condicionais;
-- Manipulação de entrada de dados pelo terminal.
+Este projeto demonstra minha capacidade de modelar regras de negócio, estruturar aplicações orientadas a objetos e desenvolver soluções utilizando boas práticas de organização de código, validação de dados e interação com o usuário, competências essenciais para o desenvolvimento de software profissional.
 
 ## Autora
 
